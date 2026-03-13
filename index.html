@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,43 +11,143 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
 </head>
 
 <body class="bg-zinc-50 text-zinc-800 font-sans">
 
-<!-- HERO -->
+<!-- NAVBAR -->
 
-<section class="py-20">
-<div class="max-w-6xl mx-auto px-6 text-center">
+<header class="fixed top-0 w-full bg-white/80 backdrop-blur border-b z-50">
+<div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 
-<h1 class="text-4xl font-bold text-zinc-900">
+<h1 class="font-bold text-lg">Parasuraman</h1>
+
+<nav class="hidden md:flex gap-6 text-sm">
+<a href="#" class="hover:text-emerald-600">Home</a>
+<a href="#skills" class="hover:text-emerald-600">Skills</a>
+<a href="#projects" class="hover:text-emerald-600">Projects</a>
+<a href="#experience" class="hover:text-emerald-600">Experience</a>
+<a href="#contact" class="hover:text-emerald-600">Contact</a>
+</nav>
+
+<a href="#" class="bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm">
+Resume
+</a>
+
+</div>
+</header>
+
+
+<!-- HERO BANNER -->
+
+<section class="pt-32 pb-24 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
+
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+<div>
+
+<h1 class="text-5xl font-bold leading-tight">
 A. Parasuraman
 </h1>
 
-<p class="text-lg mt-2 text-zinc-600">
+<p class="mt-3 text-xl text-emerald-400">
 Full Stack Developer (MERN / Next.js)
 </p>
 
-<p class="mt-3 text-sm text-zinc-500">
+<p class="mt-5 text-slate-300">
+Full Stack Developer with strong experience in MERN stack and Next.js,
+specializing in scalable web applications, crypto platforms and enterprise systems.
+</p>
+
+<p class="mt-4 text-sm text-slate-400">
 a.parasuraman1999@gmail.com | +91-8825819164
 </p>
 
-<p class="max-w-3xl mx-auto mt-6 text-zinc-600 leading-relaxed">
-Full Stack Developer with strong experience in MERN stack and Next.js,
-specializing in scalable web applications, crypto platforms, and gaming
-systems including decentralized exchanges, ICO platforms, casino
-platforms and admin dashboards.
-</p>
+<div class="flex gap-4 mt-6">
+
+<a href="#projects"
+class="bg-emerald-500 px-6 py-3 rounded-lg text-sm font-medium">
+View Projects
+</a>
+
+<a href="#contact"
+class="border border-white px-6 py-3 rounded-lg text-sm">
+Contact
+</a>
 
 </div>
+
+</div>
+
+<div class="hidden md:block">
+
+<img src="https://illustrations.popsy.co/gray/web-development.svg">
+
+</div>
+
+</div>
+
 </section>
+
+
+
+<!-- CAROUSEL -->
+
+<section class="py-20 bg-white">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-2xl font-semibold text-center mb-12">
+Featured Highlights
+</h2>
+
+<div class="relative overflow-hidden">
+
+<div id="carousel"
+class="flex transition-transform duration-700">
+
+<div class="min-w-full text-center">
+<h3 class="text-xl font-semibold">
+Developed Secure Crypto Trading Platform
+</h3>
+<p class="text-zinc-600 mt-2">
+Implemented KYC modules, deposit systems and trading analytics.
+</p>
+</div>
+
+<div class="min-w-full text-center">
+<h3 class="text-xl font-semibold">
+Built Decentralized Exchange Platform
+</h3>
+<p class="text-zinc-600 mt-2">
+Token swap system using Next.js and Web3 integration.
+</p>
+</div>
+
+<div class="min-w-full text-center">
+<h3 class="text-xl font-semibold">
+Ecommerce Dark Store Admin Platform
+</h3>
+<p class="text-zinc-600 mt-2">
+Zone detection and delivery coverage management system.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 
 
 <!-- TECH STACK -->
 
-<section class="py-16 bg-white">
+<section id="skills" class="py-16 bg-zinc-50">
 
 <div class="max-w-6xl mx-auto px-6">
 
@@ -109,6 +211,7 @@ class="w-14 mx-auto">
 </section>
 
 
+
 <!-- OPEN SOURCE -->
 
 <section class="py-20">
@@ -121,7 +224,7 @@ Open Source npm Packages
 
 <div class="grid md:grid-cols-2 gap-8">
 
-<div class="border p-6 rounded-lg hover:shadow-lg transition">
+<div class="bg-white border p-6 rounded-xl hover:shadow-xl transition">
 
 <div class="flex items-center gap-3 mb-3">
 
@@ -148,7 +251,7 @@ View Package →
 </div>
 
 
-<div class="border p-6 rounded-lg hover:shadow-lg transition">
+<div class="bg-white border p-6 rounded-xl hover:shadow-xl transition">
 
 <div class="flex items-center gap-3 mb-3">
 
@@ -181,9 +284,10 @@ View Package →
 </section>
 
 
-<!-- EXPERIENCE STEPPER -->
 
-<section class="py-20 bg-white">
+<!-- EXPERIENCE -->
+
+<section id="experience" class="py-20 bg-white">
 
 <div class="max-w-4xl mx-auto px-6">
 
@@ -244,136 +348,73 @@ Meganar Technologies | Mar 2022 – Sep 2022
 
 </section>
 
+
+
+<!-- SECURITY SECTION -->
+
 <section class="py-20 bg-slate-50">
-  <div class="max-w-6xl mx-auto px-6">
 
-    <!-- Title -->
-    <div class="text-center mb-14">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
-        Security & Infrastructure
-      </h2>
-      <p class="mt-3 text-gray-600 max-w-xl mx-auto">
-        Implemented enterprise-level security, CDN optimization and API protection
-        strategies to ensure reliable and scalable applications.
-      </p>
-    </div>
+<div class="max-w-6xl mx-auto px-6">
 
-    <!-- Cards -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<h2 class="text-3xl font-bold text-center mb-12">
+Security & Infrastructure
+</h2>
 
-      <!-- SonarQube -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="bg-gray-100 p-3 rounded-xl">
-            <!-- shield icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2L3 7v5c0 5 3.5 9.5 9 11 5.5-1.5 9-6 9-11V7l-9-5z"/>
-            </svg>
-          </div>
-          <h3 class="font-semibold text-lg">SonarQube Analysis</h3>
-        </div>
-        <p class="text-gray-600 text-sm">
-          Integrated static code analysis using SonarQube to detect vulnerabilities,
-          security hotspots and maintain code quality.
-        </p>
-      </div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Rate Limit -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="bg-gray-100 p-3 rounded-xl">
-            <!-- speed icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M12 6v6l4 2"/>
-            </svg>
-          </div>
-          <h3 class="font-semibold text-lg">API Rate Limiting</h3>
-        </div>
-        <p class="text-gray-600 text-sm">
-          Implemented request throttling to prevent API abuse and protect backend services
-          from excessive traffic.
-        </p>
-      </div>
+<div class="bg-white p-6 rounded-xl shadow">
+<h3 class="font-semibold">SonarQube Analysis</h3>
+<p class="text-sm text-zinc-600 mt-2">
+Static code analysis to detect vulnerabilities and maintain code quality.
+</p>
+</div>
 
-      <!-- Token -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="bg-gray-100 p-3 rounded-xl">
-            <!-- key icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="8" cy="15" r="4"/>
-              <path d="M12 15h8M16 11v8"/>
-            </svg>
-          </div>
-          <h3 class="font-semibold text-lg">Secure API Tokens</h3>
-        </div>
-        <p class="text-gray-600 text-sm">
-          Implemented short-lived API tokens with expiration and refresh flow
-          for enhanced authentication security.
-        </p>
-      </div>
+<div class="bg-white p-6 rounded-xl shadow">
+<h3 class="font-semibold">API Rate Limiting</h3>
+<p class="text-sm text-zinc-600 mt-2">
+Implemented throttling to protect backend services from abuse.
+</p>
+</div>
 
-      <!-- CDN -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="bg-gray-100 p-3 rounded-xl">
-            <!-- globe icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M2 12h20M12 2c3 4 3 16 0 20"/>
-            </svg>
-          </div>
-          <h3 class="font-semibold text-lg">CDN Integration</h3>
-        </div>
-        <p class="text-gray-600 text-sm">
-          Integrated CDN to deliver static assets globally with caching
-          strategies for faster load times and reduced server load.
-        </p>
-      </div>
+<div class="bg-white p-6 rounded-xl shadow">
+<h3 class="font-semibold">Secure API Tokens</h3>
+<p class="text-sm text-zinc-600 mt-2">
+Short-lived token authentication and refresh flow.
+</p>
+</div>
 
-      <!-- RBAC -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="bg-gray-100 p-3 rounded-xl">
-            <!-- users icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-3-3.87"/>
-              <circle cx="9" cy="7" r="4"/>
-            </svg>
-          </div>
-          <h3 class="font-semibold text-lg">Role Based Access</h3>
-        </div>
-        <p class="text-gray-600 text-sm">
-          Implemented RBAC authorization for admin and user roles
-          across backend services.
-        </p>
-      </div>
+<div class="bg-white p-6 rounded-xl shadow">
+<h3 class="font-semibold">CDN Integration</h3>
+<p class="text-sm text-zinc-600 mt-2">
+Global caching of static assets for faster delivery.
+</p>
+</div>
 
-      <!-- Monitoring -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="bg-gray-100 p-3 rounded-xl">
-            <!-- activity icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-            </svg>
-          </div>
-          <h3 class="font-semibold text-lg">Security Monitoring</h3>
-        </div>
-        <p class="text-gray-600 text-sm">
-          Implemented logs and monitoring dashboards to track API activity
-          and detect suspicious behavior.
-        </p>
-      </div>
+<div class="bg-white p-6 rounded-xl shadow">
+<h3 class="font-semibold">RBAC Authorization</h3>
+<p class="text-sm text-zinc-600 mt-2">
+Admin and user role based access system.
+</p>
+</div>
 
-    </div>
-  </div>
+<div class="bg-white p-6 rounded-xl shadow">
+<h3 class="font-semibold">Monitoring</h3>
+<p class="text-sm text-zinc-600 mt-2">
+Logs and dashboards for API activity monitoring.
+</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+
 
 <!-- PROJECTS -->
 
-<section class="py-20">
+<section id="projects" class="py-20">
 
 <div class="max-w-6xl mx-auto px-6">
 
@@ -383,28 +424,28 @@ Key Projects
 
 <div class="grid md:grid-cols-2 gap-8">
 
-<div class="border p-6 rounded-lg hover:shadow-lg transition">
+<div class="bg-white border p-6 rounded-xl hover:shadow-lg">
 <h3 class="font-semibold">Yapit DEX</h3>
 <p class="text-sm text-zinc-600 mt-2">
 Decentralized token swap platform using Next.js and Web3.
 </p>
 </div>
 
-<div class="border p-6 rounded-lg hover:shadow-lg transition">
+<div class="bg-white border p-6 rounded-xl hover:shadow-lg">
 <h3 class="font-semibold">Crypto Trading Platform</h3>
 <p class="text-sm text-zinc-600 mt-2">
 KYC, Loan and trading analytics modules.
 </p>
 </div>
 
-<div class="border p-6 rounded-lg hover:shadow-lg transition">
+<div class="bg-white border p-6 rounded-xl hover:shadow-lg">
 <h3 class="font-semibold">Casino Platform</h3>
 <p class="text-sm text-zinc-600 mt-2">
 Betting system and backend integration for 15+ games.
 </p>
 </div>
 
-<div class="border p-6 rounded-lg hover:shadow-lg transition">
+<div class="bg-white border p-6 rounded-xl hover:shadow-lg">
 <h3 class="font-semibold">E-Commerce Admin Platform</h3>
 <p class="text-sm text-zinc-600 mt-2">
 Zone management for dark store delivery coverage.
@@ -416,6 +457,7 @@ Zone management for dark store delivery coverage.
 </div>
 
 </section>
+
 
 
 <!-- EDUCATION -->
@@ -455,6 +497,7 @@ BCA – P.K.N Arts and Science College
 </section>
 
 
+
 <!-- AWARDS -->
 
 <section class="py-20">
@@ -468,11 +511,8 @@ Awards & Recognitions
 <ul class="space-y-3 text-sm text-zinc-600">
 
 <li>Rock Star Award – Osiz Technologies (2026)</li>
-
 <li>Best Development Team Award – Osiz Technologies (2026)</li>
-
 <li>Prime Participation Award – Osiz Technologies (2024, 2025)</li>
-
 <li>Academic Excellence – P.K.N Arts and Science College</li>
 
 </ul>
@@ -480,6 +520,7 @@ Awards & Recognitions
 </div>
 
 </section>
+
 
 
 <!-- FOOTER -->
@@ -490,5 +531,23 @@ Awards & Recognitions
 
 </footer>
 
+
+
+<script>
+
+let index = 0;
+const carousel = document.getElementById("carousel");
+const slides = carousel.children.length;
+
+setInterval(() => {
+
+index = (index + 1) % slides;
+carousel.style.transform = `translateX(-${index * 100}%)`;
+
+}, 3500);
+
+</script>
+
 </body>
 </html>
+
